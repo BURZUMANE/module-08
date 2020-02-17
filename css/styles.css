@@ -1,0 +1,284 @@
+/* VARS */
+
+:root{
+    --whites:#fff;
+    --main-font: 'Montserrat', sans-serif;
+    --second-fond: "Roboto";
+}
+
+/* GLOBAL */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+body{
+    font-family: var(--main-font);
+    font-size: 0.875rem;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+button:focus,
+button:hover{
+    transform: scale(1.1,1.1);
+}
+
+.container{
+    width: 87.5%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+}
+
+.main-nav{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.logo{
+    margin-top: 7.25rem;
+}
+
+.logo-link{
+    font-size: 1.25rem;
+    font-family: var(--main-font);
+    color:var(--whites);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main-nav-list{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.sign-up{
+    border: 2px solid #fff;
+    border-radius: 1.25rem;
+}
+
+.main-nav-list__item-link{
+    color: #fff;
+    padding:  0.375rem 1.375rem;
+}
+
+/* MAIN */
+.main{
+    position: relative;
+
+}
+
+/* MAIN-SECTION */
+
+.main-section{
+    padding-top: 22.5rem;
+    background: #000;
+    background-image: url(../img/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding-bottom: 8.5625rem;
+}
+
+.main-section-title{
+    font-size: 1.875rem;
+    font-family: var(--main-font);
+    color: var(--whites);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+  
+
+.main-section-text {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    font-family: var(--second-fond);
+    color: var(--whites);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1.125rem;
+  }
+  
+.main-button{
+    margin: 0 auto;
+    display: block;
+    border-radius: 20px;
+    background-color: #ff4e50;
+    width: 17.5rem;
+    height: 2.5rem;
+    border: none;
+    font-size: 0.875rem;
+    font-family: var(--main-font);
+    color: var(--whites);
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+/* TESTIMONIALS SECTION */
+
+.testimonials{
+    padding-top: 4.25rem;
+    padding-bottom: 3.5625rem;
+}
+
+.testimonials-title{
+    font-size: 1.375rem;
+    font-family: "Montserrat";
+    color: #333333;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.testimonials-list__item{
+    margin-bottom: 1.5625rem;
+}
+
+.img-wrapper{
+    position: relative;
+    margin: 0 auto;
+    width: 7.625rem;
+    margin-bottom: 1.125rem;
+
+}
+/* TESTIMONIAL ICONS*/
+
+/* TESTIMONIAL ICONS BG*/
+.tv::after{
+    background-color: #ff4e50;
+    background-image: url(../img/tv.png);
+}
+
+.chemestry::after{
+    background: #ffa507;
+    background-image: url(../img/chemestry.png);
+}
+.coffe::after{
+    background: #1cd7ad;
+    background-image: url(../img/coffe.png);
+}
+
+.telegram::after{
+    background: #4e73db;
+    background-image: url(../img/telegram.png);
+}
+
+.img-wrapper::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    content: "";
+    border: 4px solid var(--whites);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+/* TESTIMONIAL NAME*/
+.testimonial-name{
+    font-size: 14px;
+    color: #333333;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-dscr {
+    font-size: 0.875rem;
+    font-family: var(--second-fond);
+    color: #666666;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+/* TESTIMONIALS BUTTON */
+.testimonials-button{
+    display: block;
+    margin: 0 auto;
+    border: 4px solid #ff4e50;
+    border-radius: 20px;
+    background-color: #ffffff;
+    height: 44px;
+    width: 100%;
+    font-size: 0.875rem;
+    color: #ff4e50;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+}
+  
+
+/* MEDIA  */
+@media screen and (min-width: 768px){
+    .header{
+        padding-top: 38px;
+    }
+    
+    .main-nav{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    
+
+    .logo{
+        margin-top: 0;
+    }
+
+    .main-section{
+        padding-top: 220px;
+        padding-bottom: 234px;
+    }
+/* TESTIMONIALS */
+.testimonials_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.testimonials-list__item{
+    width: 14.75rem;
+}
+    /* TESTIMONIALS BUTTON */
+.testimonials-button{
+    width: 12rem;
+}
+
+}
