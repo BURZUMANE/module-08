@@ -154,6 +154,13 @@ button:hover{
     padding-bottom: 3.5625rem;
 }
 
+.testimonials_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 1.6875rem;
+}
+
 .testimonials-title{
     font-size: 1.375rem;
     font-family: "Montserrat";
@@ -161,11 +168,7 @@ button:hover{
     font-weight: 700;
     line-height: 1.2;
     text-align: center;
-    margin-bottom: 1rem;
-}
-
-.testimonials-list__item{
-    margin-bottom: 1.5625rem;
+    margin-bottom: 1.125rem;;
 }
 
 .img-wrapper{
@@ -247,6 +250,14 @@ button:hover{
   
 
 /* MEDIA  */
+
+@media screen and (max-width: 768px){
+    .testimonials-list__item:not(:last-child){
+        margin-bottom: 1.5625rem;
+    }
+}
+
+
 @media screen and (min-width: 768px){
     .header{
         padding-top: 38px;
@@ -265,15 +276,10 @@ button:hover{
     }
 
     .main-section{
-        padding-top: 220px;
-        padding-bottom: 234px;
+        padding-top: 13.75rem;
+        padding-bottom: 14.625rem;
     }
 /* TESTIMONIALS */
-.testimonials_list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
 
 .testimonials-list__item{
     width: 14.75rem;
