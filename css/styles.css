@@ -31,7 +31,9 @@ body{
 ul,ol{
     list-style: none;
 }
-
+button{
+    cursor: pointer;
+}
 button:focus,
 button:hover{
     transform: scale(1.1,1.1);
