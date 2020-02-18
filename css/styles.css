@@ -252,6 +252,7 @@ button:hover{
     border-radius: 20px;
     background-color: #ffffff;
     height: 44px;
+    width: 100%;
     font-size: 0.875rem;
     color: #ff4e50;
     font-weight: 700;
@@ -304,6 +305,12 @@ button:hover{
     /* TESTIMONIALS BUTTON */
 .testimonials-button{
     max-width: 250px;
+}
+
+@media screen and (max-width:767px){
+    .main-section{
+        padding-top: 200px;
+    }
 }
 
 @media screen and (min-width: 1400px){
