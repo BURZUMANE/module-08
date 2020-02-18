@@ -73,6 +73,10 @@ button:hover{
     text-transform: uppercase;
 }
 
+.logo-link:hover,.logo-link:focus{
+    color: #ff4e50;
+}
+
 .main-nav-list{
     display: flex;
     align-items: baseline;
@@ -84,9 +88,18 @@ button:hover{
     border-radius: 1.25rem;
 }
 
+.sign-up:hover,.sign-up:focus{
+    border-color: #ff4e50;
+}
+
+
 .main-nav-list__item-link{
     color: #fff;
     padding:  0.375rem 1.375rem;
+}
+
+.main-nav-list__item-link:hover, .main-nav-list__item-link:focus{
+    color: #ff4e50;
 }
 
 /* MAIN */
@@ -284,6 +297,11 @@ button:hover{
 .testimonials-list__item{
     width: 14.75rem;
 }
+
+.testimonials-list__item:hover,.testimonials-list__item:focus{
+    transform: scale(1.1,1.1);
+}
+
     /* TESTIMONIALS BUTTON */
 .testimonials-button{
     width: 12rem;
