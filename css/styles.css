@@ -41,7 +41,7 @@ button:hover{
 
 .container{
     min-width: 320px;
-    max-width: 1170px;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -307,4 +307,12 @@ button:hover{
     width: 12rem;
 }
 
+}
+
+
+@media screen and (min-width: 1400px){
+    .container{
+        max-width: 1170px;
+    }
+    
 }
