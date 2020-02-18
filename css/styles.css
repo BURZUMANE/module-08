@@ -103,15 +103,14 @@ button:hover{
 }
 
 /* MAIN */
-.main{
+/* .main{
     position: relative;
 
-}
+} */
 
 /* MAIN-SECTION */
 
 .main-section{
-    padding-top: 22.5rem;
     background: #000;
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
@@ -253,7 +252,6 @@ button:hover{
     border-radius: 20px;
     background-color: #ffffff;
     height: 44px;
-    width: 100%;
     font-size: 0.875rem;
     color: #ff4e50;
     font-weight: 700;
@@ -292,10 +290,11 @@ button:hover{
         padding-top: 13.75rem;
         padding-bottom: 14.625rem;
     }
+}
 /* TESTIMONIALS */
 
 .testimonials-list__item{
-    width: 14.75rem;
+    max-width: 14.75rem;
 }
 
 .testimonials-list__item:hover,.testimonials-list__item:focus{
@@ -304,11 +303,8 @@ button:hover{
 
     /* TESTIMONIALS BUTTON */
 .testimonials-button{
-    width: 12rem;
+    max-width: 250px;
 }
-
-}
-
 
 @media screen and (min-width: 1400px){
     .container{
