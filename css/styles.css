@@ -264,7 +264,7 @@ button:hover{
 
 /* MEDIA  */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1200px){
     .testimonials-list__item:not(:last-child){
         margin-bottom: 1.5625rem;
     }
